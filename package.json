@@ -1,7 +1,7 @@
 {
-  "name": "bruno-transport",
+  "name": "PVBLIC",
   "version": "0.1.0",
-  "homepage": "https://bmorety.github.io/transport",
+  "homepage": "https://pvblic.co",
   "private": true,
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.6.0",
