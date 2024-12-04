@@ -1,0 +1,25 @@
+{
+  "short_name": "PVBLIC.",
+  "name": "PVBLIC.",
+  "icons": [
+    {
+      "src": "favicon.ico",
+      "sizes": "192x192 64x64 32x32 24x24 16x16",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "images/Logo192.png",
+      "type": "image/png",
+      "sizes": "192x76"
+    },
+    {
+      "src": "images/Logo512.png",
+      "type": "image/png",
+      "sizes": "512x203"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}
