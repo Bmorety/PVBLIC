@@ -8,6 +8,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faRedo, faSync, faPersonWalking, faCoffee, faWindowClose } from '@fortawesome/free-solid-svg-icons'
 import { Departures } from "./Departures";
 
+const BASE_PATH = process.env.PUBLIC_URL || '';
+
 const App: React.FC = () => {
   const [showKofi, setShowKofi] = useState(false);
 
@@ -20,7 +22,15 @@ const App: React.FC = () => {
           A Project by Critical Mass Works
           <FontAwesomeIcon icon={showKofi ? faWindowClose : faCoffee} className="coffee-icon" fixedWidth />
         </a>
-        <img src="/transport/images/Logo512.png" alt="PVBLIC." className="logo" />
+        <img
+          src={process.env.PUBLIC_URL + '/images/Logo512.png'}
+          alt="PVBLIC."
+          className="logo"
+          onError={(e) => {
+            // Fallback to direct GitHub Pages URL if the first path fails
+            e.currentTarget.src = 'https://bmorety.github.io/PVBLIC/images/Logo512.png';
+          }}
+        />
         <div className="separator" />
       </header>
       <main className={`app-main ${showKofi ? 'show-kofi' : ''}`}>

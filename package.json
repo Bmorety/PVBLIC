@@ -1,7 +1,7 @@
 {
   "name": "PVBLIC",
   "version": "0.1.0",
-  "homepage": "https://pvblic.co",
+  "homepage": "https://bmorety.github.io/PVBLIC",
   "private": true,
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.6.0",
