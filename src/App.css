@@ -68,7 +68,7 @@ input[type="button"] {
 
 .separator {
   width: 100%;
-  height: 1px;
+  height: 3px;
   background-color: rgb(0, 0, 0);
   margin: 7px 0;
 }
