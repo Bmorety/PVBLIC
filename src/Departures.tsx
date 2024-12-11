@@ -250,24 +250,36 @@ export const Departures: React.FC = () => {
         <div className="position-relative" title="Search">
             <FontAwesomeIcon icon={faMagnifyingGlass} className="float-end cursor-click" onClick={() => setSearchOpen(!searchOpen)} fixedWidth />
         </div>
-        {searchOpen ? <>
-            <input ref={inputRef} className="search-input" placeholder="Search for a station" onChange={searchStation}></input>
-            {searchResults === null
-                ? ""
-                : searchResults ?
-                    <> Select
-                        {searchResults.map(
-                            (station: StationData) => <div key={station.globalId} className="cursor-click ml-1" onClick={() => handleSearchResultClick(station)}>
-                                {station.name}
-                            </div>
+        {searchOpen && (
+            <div className="search-container">
+                <input
+                    ref={inputRef}
+                    className="search-input"
+                    placeholder="Search for a station"
+                    onChange={searchStation}
+                />
+                {searchResults !== null && (
+                    <div className="search-results-container ml-1">
+                        {searchResults ? (
+                            <>
+                                <div className="search-results-header"></div>
+                                {searchResults.map((station: StationData) => (
+                                    <div
+                                        key={station.globalId}
+                                        className="search-result-item ml-2"
+                                        onClick={() => handleSearchResultClick(station)}
+                                    >
+                                        {station.name}
+                                    </div>
+                                ))}
+                            </>
+                        ) : (
+                            <div className="no-results">No results</div>
                         )}
-                    </>
-                    :
-                    "No results"
-            }
-        </>
-            : <></>
-        }
+                    </div>
+                )}
+            </div>
+        )}
         {getStationList().map((station) => (
             <div key={station.globalId} className={`station-section ${expandedStationId === station.globalId ? 'open' : ''}`}>
                 <div className="station-header" onClick={() => toggleAccordion(station.globalId)}>

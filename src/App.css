@@ -39,10 +39,10 @@ input[type="button"] {
   overflow: hidden;
   margin: 5px 0;
 
-  background-image: url('../public/images/headerimage.jpg');
+  background-image: url('../public/images/headerimageLW.jpg');
   background-size: cover;
   background-position: center;
-  border-radius: 6px;
+  border-radius: 4px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 
 }
@@ -82,6 +82,7 @@ input[type="button"] {
   min-height: 100vh;
   padding: 5px;
   box-sizing: border-box;
+
 }
 
 .logo {
@@ -90,13 +91,15 @@ input[type="button"] {
   height: fit-content;
   margin-top: 20px;
   margin-bottom: 10px;
+  margin-left: 2px;
 }
 
 .separator {
   width: 100%;
-  height: 3px;
+  height: 2.5px;
   background-color: rgb(0, 0, 0);
   margin: 0 0;
+  border-radius: 4px;
 }
 
 .transport-button-container {
@@ -112,9 +115,9 @@ input[type="button"] {
   border-radius: 0.25rem;
   font-weight: bold;
   cursor: pointer;
-  transition: background-color 0.3s, color 0.3s;
-  background-color: #adaeaf;
-  color: white;
+  transition: background-color 0.25s, color 0.25s;
+  background-color: #00000037;
+  color: rgb(255, 255, 255);
 
 }
 
@@ -245,7 +248,7 @@ label:has(input[type='checkbox']) {
   border: none;
   background: none;
   margin: 0;
-  padding-top: 12px;
+  padding-top: 10px;
   cursor: pointer;
   font-size: 16px;
   color: black;
@@ -255,6 +258,7 @@ label:has(input[type='checkbox']) {
 
 .coffee-icon {
   margin-left: 8px;
+  margin-right: 4px;
 }
 
 .show-kofi {
@@ -285,6 +289,7 @@ label:has(input[type='checkbox']) {
   box-sizing: border-box;
   overflow-x: hidden;
   flex-shrink: 0;
+  z-index: 1;
 }
 
 @media (min-width: 768px) {
@@ -334,11 +339,13 @@ label:has(input[type='checkbox']) {
   position: relative;
   width: 100%;
   height: 0;
+  margin-top: 8px;
 }
 
 .float-end {
   position: relative;
   float: right;
+
 }
 
 .cursor-click,
@@ -346,8 +353,26 @@ label:has(input[type='checkbox']) {
   cursor: pointer;
 }
 
+
+.search-input {
+  width: 100%;
+  border: none;
+  font-family: var(--font);
+  padding-bottom: 2px;
+  font-size: 16px;
+  background: transparent;
+  transition: box-shadow 0.3s;
+}
+
+.search-input:focus {
+  outline: none;
+  box-shadow: 0 2px 0px rgba(0, 0, 0, 0.2);
+}
+
+
 .ml-1 {
   margin-left: 1em;
+
 }
 
 .ml-2 {
@@ -356,4 +381,25 @@ label:has(input[type='checkbox']) {
 
 .ml-5 {
   margin-left: 5em;
+}
+
+.searchResults {
+  margin-left: 2px;
+
+}
+
+.search-results {
+  margin-top: 20px;
+}
+
+.search-result-item {
+  margin-left: 10px;
+}
+
+.search-results-container {
+  margin-top: 5px;
+}
+
+.search-results-container>div {
+  margin-left: 2px;
 }
