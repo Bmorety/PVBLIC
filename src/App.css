@@ -39,7 +39,7 @@ input[type="button"] {
   overflow: hidden;
   margin: 5px 0;
 
-  background-image: url('../public/images/headerimageLW.jpg');
+  background-image: url('../public/images/headerimageMA.jpg');
   background-size: cover;
   background-position: center;
   border-radius: 4px;
@@ -54,7 +54,7 @@ input[type="button"] {
   right: 0;
   bottom: 0;
   left: 0;
-  background-color: rgba(255, 255, 255, 0.6);
+  background-color: rgba(255, 255, 255, 0.15);
   /* Black overlay with 60% opacity */
   z-index: 1;
 }
