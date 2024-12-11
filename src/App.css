@@ -11,6 +11,7 @@ body {
   background-color: white;
   color: black;
   overflow-x: hidden;
+
 }
 
 button,
@@ -36,9 +37,33 @@ input[type="button"] {
   flex-direction: column;
   align-items: left;
   overflow: hidden;
-
   margin: 5px 0;
+
+  background-image: url('../public/images/headerimage.jpg');
+  background-size: cover;
+  background-position: center;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
 }
+
+.app-header::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(255, 255, 255, 0.6);
+  /* Black overlay with 60% opacity */
+  z-index: 1;
+}
+
+.app-header>* {
+  position: relative;
+  z-index: 2;
+}
+
 
 
 .app-main {
@@ -47,6 +72,7 @@ input[type="button"] {
   display: flex;
   flex-direction: column;
   overflow-x: hidden;
+  z-index: 1;
 }
 
 
@@ -70,13 +96,14 @@ input[type="button"] {
   width: 100%;
   height: 3px;
   background-color: rgb(0, 0, 0);
-  margin: 7px 0;
+  margin: 0 0;
 }
 
 .transport-button-container {
   display: flex;
   flex-wrap: wrap;
   gap: 0.1rem;
+  margin-bottom: 5px;
 }
 
 .transport-button {
