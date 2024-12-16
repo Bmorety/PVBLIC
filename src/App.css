@@ -26,7 +26,7 @@ input[type="button"] {
   min-height: 100vh;
   width: 100%;
   max-width: 600px;
-  margin: 0 auto;
+  margin: 5px auto;
   padding: 0 0.8rem;
   overflow-x: hidden;
   box-sizing: border-box;
@@ -251,7 +251,7 @@ label:has(input[type='checkbox']) {
   padding-top: 4px;
   padding-bottom: 2px;
   cursor: pointer;
-  font-size: 14px;
+  font-size: 15px;
   color: black;
   text-align: right;
   display: block;
