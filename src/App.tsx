@@ -19,9 +19,22 @@ const App: React.FC = () => {
     <div className="app-container">
       <header className="app-header">
         <a onClick={toggleKofi} className="kofi-button">
-          Built for urbanauts, Ride PVBLIC
-          <FontAwesomeIcon icon={showKofi ? faWindowClose : faCoffee} className="coffee-icon" fixedWidth />
+          Built for urbanauts, go PVBLIC
+          {showKofi ? (
+            <FontAwesomeIcon icon={faWindowClose} className="coffee-icon" fixedWidth />
+          ) : (
+            <img
+              src={process.env.PUBLIC_URL + '/images/kofi.png'}
+
+              className="koficup"
+              onError={(e) => {
+                // Fallback to direct GitHub Pages URL if the first path fails
+                e.currentTarget.src = 'https://bmorety.github.io/PVBLIC/images/kofi.png';
+              }}
+            />
+          )}
         </a>
+
         <img
           src={process.env.PUBLIC_URL + '/images/Logo512.png'}
           alt="PVBLIC."

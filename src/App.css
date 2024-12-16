@@ -54,8 +54,8 @@ input[type="button"] {
   right: 0;
   bottom: 0;
   left: 0;
-  background-color: rgba(255, 255, 255, 0.15);
-  /* Black overlay with 15%% opacity */
+  background-color: rgba(255, 255, 255, 0.2);
+  /* Black overlay with 20%% opacity */
   z-index: 1;
 }
 
@@ -265,9 +265,22 @@ label:has(input[type='checkbox']) {
 
 }
 
+.koficup {
+  width: 100%;
+  width: fit-content;
+  max-height: 17px;
+  margin-top: 0px;
+  margin-bottom: -3px;
+  margin-left: 5px;
+}
+
 .coffee-icon {
-  margin-left: 8px;
-  margin-right: 4px;
+  width: 100%;
+  width: fit-content;
+  max-height: 20px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-left: 5px;
 }
 
 
