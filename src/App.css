@@ -38,7 +38,7 @@ input[type="button"] {
   align-items: left;
   overflow: hidden;
   margin: 5px 0;
-
+  padding-top: 10px;
   background-image: url('../public/images/headerimageLW.jpg');
   background-size: cover;
   background-position: center;
@@ -55,7 +55,7 @@ input[type="button"] {
   bottom: 0;
   left: 0;
   background-color: rgba(255, 255, 255, 0.15);
-  /* Black overlay with 60% opacity */
+  /* Black overlay with 15%% opacity */
   z-index: 1;
 }
 
@@ -248,14 +248,14 @@ label:has(input[type='checkbox']) {
   border: none;
   background: none;
   margin: 0;
-  padding-top: 8px;
-  padding-bottom: 1px;
+  padding-top: 4px;
+  padding-bottom: 2px;
   cursor: pointer;
   font-size: 13px;
   color: black;
   text-align: right;
   display: block;
-  background-color: #FFFFFF;
+  background-color: rgb(255, 255, 255);
   /*
   font-family: monospace;
   letter-spacing: -1px;
