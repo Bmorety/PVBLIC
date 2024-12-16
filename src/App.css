@@ -267,7 +267,6 @@ label:has(input[type='checkbox']) {
 
 .koficup {
   width: 100%;
-  width: fit-content;
   max-height: 17px;
   margin-top: 0px;
   margin-bottom: -3px;
