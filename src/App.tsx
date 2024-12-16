@@ -63,7 +63,7 @@ const App: React.FC = () => {
               </p>
 
               <p>
-                Are you an Urbanaut, ready to share your unique insights about your city? If you believe in the power of collective wisdom to improve urban life, your support can make a meaningful difference. Contributions will ensure the continued development of PVBLIC's mission.
+                Are you an Urbanaut, ready to share your unique insights about your city? If you believe in the power of collective wisdom to improve urban life, your support can make a meaningful difference. Contributions will ensure the continued development of PVBLIC's vision.
               </p>
             </div>
             <iframe
