@@ -330,6 +330,11 @@ label:has(input[type='checkbox']) {
   .transport-button {
     padding: 0.35rem 0.9rem;
   }
+
+  .kofi-button {
+    font-size: 16px;
+  }
+
 }
 
 
