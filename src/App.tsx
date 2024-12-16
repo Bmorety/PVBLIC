@@ -19,7 +19,7 @@ const App: React.FC = () => {
     <div className="app-container">
       <header className="app-header">
         <a onClick={toggleKofi} className="kofi-button">
-          A Project by Critical Mass Works
+          Built for urbanauts, Ride PVBLIC
           <FontAwesomeIcon icon={showKofi ? faWindowClose : faCoffee} className="coffee-icon" fixedWidth />
         </a>
         <img
@@ -43,17 +43,14 @@ const App: React.FC = () => {
               </p>
               <p>Upcoming features:
                 <ul>
-                  <li>Route planner</li>
-                  <li>User geotagged posts</li>
-                  <li>Collective narratives about your favorite neighbourhoods</li>
+                  <li>Plan your route</li>
+                  <li>Share your urbanaut thoughts</li>
+                  <li>Let's generate collective narratives about our favorite neighbourhoods</li>
                 </ul>
               </p>
 
               <p>
-                PVBLIC is part of Critical Mass Works, a platform dedicated to grassroots community projects, leveraging collective knowledge with digital tools to create solutions for more sustainable, equitable, and inclusive cities.
-              </p>
-              <p>
-                Are you an Urbanaut, ready to share your unique insights about your city? If you believe in the power of collective wisdom to improve urban life, your support can make a meaningful difference. Contributions will help drive the continued development of tools like PVBLIC and support the mission of Critical Mass Works.
+                Are you an Urbanaut, ready to share your unique insights about your city? If you believe in the power of collective wisdom to improve urban life, your support can make a meaningful difference. Contributions will ensure the continued development of PVBLIC's mission.
               </p>
             </div>
             <iframe

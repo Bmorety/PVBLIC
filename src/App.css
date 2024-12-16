@@ -39,7 +39,7 @@ input[type="button"] {
   overflow: hidden;
   margin: 5px 0;
 
-  background-image: url('../public/images/headerimageMA.jpg');
+  background-image: url('../public/images/headerimageLW.jpg');
   background-size: cover;
   background-position: center;
   border-radius: 4px;
@@ -54,7 +54,7 @@ input[type="button"] {
   right: 0;
   bottom: 0;
   left: 0;
-  background-color: rgba(255, 255, 255, 0.3);
+  background-color: rgba(255, 255, 255, 0.15);
   /* Black overlay with 60% opacity */
   z-index: 1;
 }
@@ -89,8 +89,8 @@ input[type="button"] {
   width: 100%;
   max-width: 280px;
   height: fit-content;
-  margin-top: 20px;
-  margin-bottom: 10px;
+  margin-top: 40px;
+  margin-bottom: 15px;
   margin-left: 2px;
 }
 
@@ -248,18 +248,28 @@ label:has(input[type='checkbox']) {
   border: none;
   background: none;
   margin: 0;
-  padding-top: 10px;
+  padding-top: 8px;
+  padding-bottom: 1px;
   cursor: pointer;
-  font-size: 16px;
+  font-size: 13px;
   color: black;
   text-align: right;
   display: block;
+  background-color: #FFFFFF;
+  /*
+  font-family: monospace;
+  letter-spacing: -1px;
+  text-transform: uppercase;
+  font-weight: 550;
+  */
+
 }
 
 .coffee-icon {
   margin-left: 8px;
   margin-right: 4px;
 }
+
 
 .show-kofi {
   width: 100%;
