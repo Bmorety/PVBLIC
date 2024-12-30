@@ -247,6 +247,25 @@ label:has(input[type='checkbox']) {
   background: #555;
 }
 
+.kofi-supportme-button {
+  position: absolute;
+  /* Use absolute positioning within the container */
+  bottom: 20px;
+  /* Adjust as needed for spacing from bottom */
+  left: 50%;
+  /* Center horizontally */
+  transform: translateX(-50%);
+  /* Correctly center the widget */
+  width: 100%;
+  /* Ensure it takes up the width of the container */
+  display: flex;
+  /* Flexbox to align content (if any inside the div) */
+  justify-content: center;
+  /* Center the widget horizontally */
+  z-index: 1000;
+  /* Ensure it stays on top of other elements */
+}
+
 .kofi-button {
   border: none;
   background: none;
