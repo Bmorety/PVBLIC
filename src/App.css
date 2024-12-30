@@ -114,7 +114,7 @@ input[type="button"] {
   font-weight: bold;
   cursor: pointer;
   transition: background-color 0.25s, color 0.25s;
-  background-color: #9e9e9e37;
+  background-color: #5f5e5e63;
   color: rgb(255, 255, 255);
 
 }
