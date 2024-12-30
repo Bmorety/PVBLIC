@@ -63,7 +63,7 @@ const App: React.FC = () => {
               </p>
 
               <p>
-                Are you an Urbanaut, ready to share your unique insights about your city? If you believe in the power of collective wisdom to improve urban life, your support can make a meaningful difference. Contributions will ensure the continued development of PVBLIC's vision.
+                Every coffee you contribute fuels more hours of work to refine and grow this tool. It’s about creating something meaningful for urban explorers like you—empowering a deeper sense of ownership over our cities and their spaces. Together, we’re building a deeper, grassroots understanding that amplifies the collective knowledge shaping urban life.
               </p>
             </div>
             <iframe

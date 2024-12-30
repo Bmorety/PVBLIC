@@ -232,7 +232,7 @@ export const Departures: React.FC = () => {
                 </button>
                 <button
                     onClick={toggleBahnCheck}
-                    className={`transport-button ${bahnChecked ? 'active' : ''}`}
+                    className={`transport-button ${bahnChecked ? 'active' : ''} bahn-button`}
                     aria-pressed={bahnChecked}
                 >
                     Bahn
