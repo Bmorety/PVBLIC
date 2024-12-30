@@ -103,7 +103,7 @@ const App: React.FC = () => {
                 height="36"
                 style={{ border: '0px', height: '45px' }}
                 src="https://storage.ko-fi.com/cdn/kofi3.png?v=6"
-                border="0"
+
                 alt="Buy Me a Coffee at ko-fi.com"
               />
             </a>
