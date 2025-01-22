@@ -1,8 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+/*@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');*/
 
 :root {
-  --font: 'Bebas Neue', sans-serif;
+  --font: 'SF Pro', -apple-system, 'Helvetica Neue', Arial, sans-serif;
 }
+
 
 body {
   margin: 0;
@@ -32,6 +33,12 @@ input[type="button"] {
   box-sizing: border-box;
 }
 
+.version {
+  font-family: monospace;
+  text-align: right;
+  margin-bottom: 5px;
+}
+
 .app-header {
   display: flex;
   flex-direction: column;
@@ -39,7 +46,7 @@ input[type="button"] {
   overflow: hidden;
   margin: 5px 0;
   padding-top: 10px;
-  background-image: url('../public/images/headerimageLW.jpg');
+  background-image: url('../public/images/headerimagelogo.jpg');
   background-size: cover;
   background-position: center;
   border-radius: 4px;
@@ -54,7 +61,7 @@ input[type="button"] {
   right: 0;
   bottom: 0;
   left: 0;
-  background-color: rgba(255, 255, 255, 0.2);
+  background-color: rgba(255, 255, 255, 0.0);
   /* Black overlay with 20%% opacity */
   z-index: 1;
 }
@@ -89,6 +96,7 @@ input[type="button"] {
   margin-top: 40px;
   margin-bottom: 15px;
   margin-left: 2px;
+  opacity: 0;
 }
 
 .separator {

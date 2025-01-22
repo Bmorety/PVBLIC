@@ -63,7 +63,6 @@ const App: React.FC = () => {
             />
           )}
         </a>
-
         <img
           src={process.env.PUBLIC_URL + '/images/Logo512.png'}
           alt="PVBLIC."
@@ -73,6 +72,10 @@ const App: React.FC = () => {
             e.currentTarget.src = 'https://bmorety.github.io/PVBLIC/images/Logo512.png';
           }}
         />
+        <p className="version">
+          Pre-Alpha. Munich MVG.
+        </p>
+
         <div className="separator" />
       </header>
       <main className={`app-main ${showKofi ? 'show-kofi' : ''}`}>
